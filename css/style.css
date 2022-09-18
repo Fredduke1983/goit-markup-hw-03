@@ -167,7 +167,7 @@ a {
 
 .button-main {
   margin-bottom: 200px;
-  width: 216px;
+  min-width: 216px;
   height: 50px;
   background-color: var(--accent-color);
   color: var(--slave-text-color);
@@ -352,6 +352,7 @@ a {
 }
 
 .filter-button {
+  min-height: 38px;
   font-family: inherit;
   color: var(--main-text-color);
   background-color: #f5f4fa;
