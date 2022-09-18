@@ -5,36 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Панель навігації -->
     <header class="header">
-      <a href="./index.html" class="logo header-logo-position" lang="en"
-        ><span class="logo-span">Web</span>Studio</a
-      >
-      <nav class="navigation">
-        <ul>
-          <li>
-            <a href="./index.html" class="navigation-anchor">Студія</a>
-          </li>
-          <li>
-            <a href="./portfolio.html" class="navigation-anchor current">Портфоліо</a>
-          </li>
-          <li>
-            <a href="#" class="navigation-anchor">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="contacts">
-        <a href="mailto:info@devstudio.com" class="contacts-anchor">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="contacts-anchor">+38 096 111 11 11</a>
+      <div class="container">
+        <div class="header-left">
+          <a href="./index.html" class="logo" lang="en"><span class="logo-span">Web</span>Studio</a>
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a href="./index.html" class="navigation-link">Студія</a>
+              </li>
+              <li class="navigation-item">
+                <a href="./portfolio.html" class="navigation-link current">Портфоліо</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-right">
+          <div class="header-contacts">
+            <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
+            <a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a>
+          </div>
+        </div>
       </div>
     </header>
     <main>
