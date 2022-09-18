@@ -19,7 +19,7 @@
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  /* clip-path: inset(50%); */
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -52,7 +52,7 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 1170px;
   margin: 0 auto;
 }
 
@@ -63,11 +63,16 @@ a {
 
 /* ------HEADER------ */
 
+.header {
+  border-radius: 4px;
+  border-color: #ffffff00;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
 .header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
 }
 
 .header-left {
@@ -91,6 +96,8 @@ a {
 
 .navigation {
   margin-left: 93px;
+  margin-top: 32px;
+  margin-bottom: 31px;
 }
 
 .navigation-list {
@@ -126,10 +133,6 @@ a {
   color: var(--second-text-color);
 }
 
-.header-contacts {
-  margin-left: 344px;
-}
-
 .header-contacts a + a {
   margin-left: 50px;
 }
@@ -145,7 +148,6 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 600px;
 }
 
 .title-main {
@@ -157,10 +159,12 @@ a {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 200px;
   margin-bottom: 30px;
 }
 
 .button-main {
+  margin-bottom: 200px;
   width: 216px;
   height: 50px;
   background-color: var(--accent-color);
@@ -208,7 +212,7 @@ a {
 /* -----WHAT WE DO----- */
 
 .what-we-do {
-  /* padding-bottom: 94px; */
+  padding-bottom: 94px;
 }
 
 .what-we-do-title {
@@ -236,7 +240,7 @@ a {
   padding-bottom: 94px;
 }
 
-.team h2 {
+.team-title {
   text-align: center;
   padding-top: 94px;
   padding-bottom: 50px;
@@ -247,15 +251,11 @@ a {
 
 .team-list {
   display: flex;
-}
-
-.team-list li + li {
-  margin-left: 30px;
+  justify-content: space-between;
 }
 
 .team-item {
   width: 270px;
-  height: 368px;
   border-radius: 0px 0px 5px 5px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 12%);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 14%);
@@ -270,7 +270,7 @@ a {
   border-radius: 0 0 4px 4px;
 }
 
-.card-description h3 {
+.team-name {
   padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
@@ -278,7 +278,7 @@ a {
   color: var(--main-text-color);
 }
 
-.card-description p {
+.team-description {
   padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
@@ -296,25 +296,28 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 250px;
   color: var(--slave-text-color);
 }
 
 .logo.footer-logo {
   color: var(--slave-text-color);
+  margin-top: 60px;
 }
+
 .footer-contacts {
   color: #ffffffa7;
 }
+
 .footer-contacts:hover,
 .footer-contacts:focus,
-.address:hover,
-.address:focus {
+.footer-address-link:hover,
+.footer-address-link:focus {
   color: var(--accent-color);
 }
 
 .footer-address {
   margin-top: 20px;
+  margin-bottom: 60px;
   line-height: 1.71;
   font-style: normal;
   font-size: 14px;
@@ -336,10 +339,16 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 94px 0;
 }
+
 .web-filter {
   display: flex;
+  justify-content: space-between;
+  width: 545px;
+  margin-bottom: 4px;
 }
+
 .filter-button {
   font-family: inherit;
   color: var(--main-text-color);
@@ -350,6 +359,11 @@ a {
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
+  padding: 0 22px;
+}
+
+.filter-button.all {
+  padding: 0 25px;
 }
 
 .filter-button:hover,
@@ -358,18 +372,38 @@ a {
   color: var(--slave-text-color);
   box-shadow: 0px 4px 4px #00000040;
 }
+
 .works-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-left: 24px;
+  margin-top: 20px;
 }
+
 .works-description {
   font-size: 16px;
   line-height: 1.87;
   color: var(--second-text-color);
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
+
 .works {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-card {
+  width: 370px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  margin-top: 30px;
+}
+
+.portfolio-card img {
+  margin-top: -1px;
+  margin-left: -1px;
 }
