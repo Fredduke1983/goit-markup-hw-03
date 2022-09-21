@@ -10,6 +10,10 @@
   --slave-text-color: #fff;
 }
 
+img {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -29,7 +33,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  margin: 0;
+}
+section {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 h1,
@@ -58,26 +65,19 @@ a {
   padding-right: 15px;
 }
 
-.button-main,
-.button {
+button {
   cursor: pointer;
+  border: none;
 }
 
 /* ------HEADER------ */
 
 .header {
-  border-radius: 4px;
   border-color: #ffffff00;
   box-shadow: 0px 4px 4px #00000040;
 }
 
 .header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-left {
   display: flex;
   align-items: center;
 }
@@ -98,8 +98,6 @@ a {
 
 .navigation {
   margin-left: 93px;
-  margin-top: 32px;
-  margin-bottom: 31px;
 }
 
 .navigation-list {
@@ -107,10 +105,14 @@ a {
 }
 
 .navigation-list li + li {
-  padding-left: 50px;
+  margin-left: 50px;
 }
 
 .navigation-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -134,6 +136,9 @@ a {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
+.header-contacts {
+  margin-left: auto;
+}
 
 .header-contacts a + a {
   margin-left: 50px;
@@ -142,33 +147,23 @@ a {
 /*  -----------------MAIN------------------------ */
 .hero {
   background-color: var(--hero-footer-bg-color);
-}
-
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  padding: 200px 0;
+  text-align: center;
 }
 
 .title-main {
-  width: 696px;
-  text-align: center;
+  margin: 0 auto 30px auto;
+  max-width: 696px;
   color: var(--slave-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 200px;
-  margin-bottom: 30px;
 }
 
 .button-main {
-  margin-bottom: 200px;
-  min-width: 216px;
-  height: 50px;
+  padding: 10px 32px;
   background-color: var(--accent-color);
   color: var(--slave-text-color);
   font-family: inherit;
@@ -177,7 +172,6 @@ a {
   line-height: 1.87;
   letter-spacing: 0.06em;
   border-radius: 4px;
-  border-color: #ffffff00;
   box-shadow: 0px 4px 4px #00000040;
 }
 .button-main:active {
@@ -185,11 +179,6 @@ a {
 }
 
 /* -----------------------ADVANTAGES-------------------- */
-
-.advantage {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
 
 .advantage-list {
   display: flex;
@@ -217,17 +206,17 @@ a {
 /* -----WHAT WE DO----- */
 
 .what-we-do {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .what-we-do-title {
   text-align: center;
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
 
 .what-we-do-list {
@@ -242,41 +231,35 @@ a {
 
 .team {
   background-color: var(--team-bg-color);
-  padding-bottom: 94px;
 }
 
 .team-title {
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
   color: var(--main-text-color);
+  padding-bottom: 50px;
 }
 
 .team-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .team-item {
-  width: 270px;
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 12%);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 14%);
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 20%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .card-description {
   background-color: var(--main-bg-color);
-  width: 270px;
-  height: 108px;
-  margin-top: -4px;
   border-radius: 0 0 4px 4px;
+  padding: 30px 0;
 }
 
 .team-name {
-  padding-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -284,7 +267,6 @@ a {
 }
 
 .team-description {
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -295,18 +277,15 @@ a {
 
 .footer {
   background-color: var(--hero-footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: var(--slave-text-color);
 }
 
 .logo.footer-logo {
   color: var(--slave-text-color);
-  margin-top: 60px;
 }
 
 .footer-contacts {
@@ -320,9 +299,8 @@ a {
   color: var(--accent-color);
 }
 
-.footer-address {
+.footer-address-item {
   margin-top: 20px;
-  margin-bottom: 60px;
   line-height: 1.71;
   font-style: normal;
   font-size: 14px;
@@ -340,18 +318,11 @@ a {
 
 /* -----------MAIN---------- */
 
-.our-portfolio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 94px 0;
-}
-
 .web-filter {
   display: flex;
-  justify-content: space-between;
-  width: 545px;
-  margin-bottom: 4px;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 34px;
 }
 
 .filter-button {
@@ -359,17 +330,15 @@ a {
   font-family: inherit;
   color: var(--main-text-color);
   background-color: #f5f4fa;
-  border: none;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  cursor: pointer;
-  padding: 0 22px;
+  padding: 6px 22px;
 }
 
 .filter-button.all {
-  padding: 0 25px;
+  padding: 6px 25px;
 }
 
 .filter-button:hover,
@@ -379,37 +348,28 @@ a {
   box-shadow: 0px 4px 4px #00000040;
 }
 
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.works-technology {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
 .works-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-left: 24px;
-  margin-top: 20px;
 }
 
 .works-description {
   font-size: 16px;
   line-height: 1.87;
   color: var(--second-text-color);
-  margin-left: 24px;
-  margin-bottom: 20px;
-}
-
-.works {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.portfolio-card {
-  width: 370px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  margin-top: 30px;
-}
-
-.portfolio-card img {
-  margin-top: -1px;
-  margin-left: -1px;
 }
